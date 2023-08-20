@@ -795,12 +795,15 @@ main {
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s; }
   .event__offer-label:hover {
-    background-color: rgba(13, 138, 228, 0.6); }
+    background-color: rgba(13, 138, 228, 0.6);
+  }
   .event__offer-label::first-letter {
     text-transform: capitalize; }
 
 .event__offer-checkbox:checked + .event__offer-label {
-  background-color: #0d8ae4; }
+  background-color: #0d8ae4;
+  color: white;
+}
 
 .event__destination-description {
   width: 560px;
@@ -812,7 +815,7 @@ main {
 
 .event__photos-container {
   width: 100%;
-  overflow-x: scroll; }
+  overflow-x: auto; }
 
 .event__photos-tape {
   display: -ms-flexbox;

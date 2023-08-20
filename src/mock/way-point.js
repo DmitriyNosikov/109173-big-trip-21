@@ -35,6 +35,7 @@ const destinationDescriptions = [
 
 const destinations = [
   {
+    id: crypto.randomUUID(),
     name: 'Moskow',
     description: destinationDescriptions[0],
     photos: [
@@ -45,6 +46,7 @@ const destinations = [
     ]
   },
   {
+    id: crypto.randomUUID(),
     name: 'London',
     description: destinationDescriptions[0].slice(150),
     photos: [
@@ -55,11 +57,13 @@ const destinations = [
     ]
   },
   {
+    id: crypto.randomUUID(),
     name: 'Amsterdam',
     description: destinationDescriptions[0].slice(1, 80),
     photos: []
   },
   {
+    id: crypto.randomUUID(),
     name: 'New Zealand',
     description: destinationDescriptions[1],
     photos: [
@@ -82,11 +86,13 @@ const destinations = [
 const offers = {
   [pointTypes.TAXI]: [
     {
+      id: crypto.randomUUID(),
       name: 'Transfer',
       cost: 80,
       checked: true,
     },
     {
+      id: crypto.randomUUID(),
       name: 'Meet in Airport',
       cost: 100,
       checked: false,
@@ -95,6 +101,7 @@ const offers = {
 
   [pointTypes.FLIGHT]: [
     {
+      id: crypto.randomUUID(),
       name: 'Extra Luggage',
       cost: 150,
       checked: false,
@@ -103,6 +110,7 @@ const offers = {
 
   [pointTypes.CHECK_IN]: [
     {
+      id: crypto.randomUUID(),
       name: 'Lunch',
       cost: 320,
       checked: true,
@@ -111,6 +119,7 @@ const offers = {
 
   [pointTypes.BUS]: [
     {
+      id: crypto.randomUUID(),
       name: 'Switch to comfort',
       cost: 80,
       checked: false,
